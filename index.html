@@ -72,15 +72,15 @@
     <h3>Warming!!</h3>
     <h4>you are in not danger,</h4>
     <h4 style="margin-bottom: 0px">if you wear headphones</h4>
+    <img src="ash.gif" alt="" width="250px" style="padding: 20px 0 0 0;">
+    <h5 style="margin: 5px 0 5px 0;">hamare yaha aisa hi hota hai</h5>
     <h3>Disclaimer</h3>
     <h4>Do not mind it, just for fun</h4>
     <br />
-    <p>version 1.0.0</p>
+    <p>version 1.1.0</p>
     <script>
       function textToSpeech() {
-        text = document
-          .getElementById("textInput")
-          .value.concat("tera maa ka bhosda teri maa ki chuut");
+        text = document.getElementById("textInput").value.concat(shivya[Math.floor(Math.random()*(shivya.length))]);
         const textInput = text;
         const speech = new SpeechSynthesisUtterance(textInput);
         speech.lang = "hi-IN"; // Set the language (e.g., en-US for English)
@@ -90,6 +90,9 @@
 
         window.speechSynthesis.speak(speech);
       }
+      const shivya = ["tera maa ka bhosda teri maa ki chuut","tuu khwab dikhata hai maadarjaat fodi denge sala","bache teri maa ki chuut", "tuzya aaila zhawwla pye bandun", "randacha tula zhawwla pye bandun"]
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2359458626240763"
+    crossorigin="anonymous"></script>
   </body>
 </html>
